@@ -226,5 +226,8 @@ header{
     #correo{
         font-size: 16px;
     }
+    .videosYT{
+        width: 200px;
+    }
 }
 
