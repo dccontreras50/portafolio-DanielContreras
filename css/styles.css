@@ -10,7 +10,6 @@ p{
 }
 
 
-
 /* FIN RESET */
 
 
@@ -195,22 +194,48 @@ header{
 
 /* FIN CONTACTO */
 
-/* PAGINA 2 EN DONDE ESTAN LAS ANIMACIONES */
+/* PAGINA 2 EN DONDE ESTAN LOS VIDEOS Y TRABAJOS */
+/* coreccion de titulos */
+#titulo{
+    text-align: center;
+    color: #6c464e;
+    font-style: italic;
+    margin-top: 30px;
+}
+
+/* INICIO DE ANIMACIONES */
 #animapag{
     text-align: center;
     color: #6c464e;
     background-color: #c1ddf0;
+    padding: 80px 30px 30px 30px;
 }
 #animapag body{
     padding: 0px;
 }
-#regreso{
-    position: fixed;
-    border-radius: 10px;
-    background-color: #de76ff;
-    border: solid 4px #de76ff;
-}
 /* FIN DE ANIMACIONES */
+
+/* INICIO CORTOS */
+#cortospag{
+    background-color: #d8acd5;
+    padding: 30px;
+}
+/* FIN CORTOS */
+
+/* INICIO PODCAST */
+#podcastpag{
+    background-color: #efea98;
+    padding: 30px;
+    text-align: center;
+}
+/* FIN PODCAST */
+
+/* INICIO PUBLICIDAD */
+#publipag{
+    background-color: #f3aeb9;
+    padding: 30px;
+}
+/* FIN PUBLICIDAD */
 
 
 
@@ -228,6 +253,16 @@ header{
     }
     .videosYT .row .col-md-6 iframe{
         width: 200px;
+    }
+    .videosYT .row .col-md-6 img{
+        width: 230px;
+    }
+}
+
+/* VERSION DE TABLETA */
+@media screen and (max-width:1078px) and (min-width:600px){
+    .videosYT .row .col-md-6 img{
+        width: 350px;
     }
 }
 

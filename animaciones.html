@@ -5,34 +5,163 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animaciones</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        html, body{
+            overflow-x: hidden !important;
+        }
+    </style>
 </head>
 <body>
+    <!-- BARRA DE NAVEGACION -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-port-d">
+
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link " href="index.html">PRINCIPAL</a>
+                <a class="nav-link" href="#animapag">ANIMACIONES</a>
+                <a class="nav-link" href="#cortospag">CORTOS</a>
+                <a class="nav-link" href="#podcastpag">PODCASTS</a>
+                <a class="nav-link" href="#publipag">PUBLICIDAD</a>
+                <a class="nav-link" href="#contacto">CONTACTO</a>
+            </div>
+        </div>
+    </nav>
+    <!-- FIN BARRA DE NAVEGACION -->
+
+    <!-- INICIO ANIMACIONES -->
     <section id="animapag">
         <div id="titulo">
-            <h2>ANIMACIONES HECHAS EN AFTER EFFECTS</h2>
-        </div>
-        <div id="regreso">
-            <a href="index.html"><button id="regreso" type="button" ><h2>Atrás</h2></button></a>
+            <h1>ANIMACIONES HECHAS EN AFTER EFFECTS</h1>
         </div>
         <div class="videosYT">
             <div class="row">
-                <div class="col-md-6">
-                    <iframe width="460" height="215" src="https://www.youtube.com/embed/Z2z1lwfx-yE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe width="460" height="215" src="https://www.youtube.com/embed/Tx7Xz8ogHJI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe width="460" height="215" src="https://www.youtube.com/embed/J_jgRW7CsmI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe width="460" height="215" src="https://www.youtube.com/embed/JEcNKtlhtMA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe width="460" height="215" src="https://www.youtube.com/embed/wKxldkHmm0Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="col-md-6" data-aos="fade-up">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Z2z1lwfx-yE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Tx7Xz8ogHJI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/J_jgRW7CsmI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
                 </div>
+                <div class="col-md-6" data-aos="fade-up">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/JEcNKtlhtMA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/wKxldkHmm0Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                
+                </div>
+
             </div>
+        </div>
+    </section>
+<!-- FIN ANIMACIONES -->
+
+    <!-- INICIO CORTOS -->
+    <section id="cortospag">
+        <div id="titulo">
+            <h1>CORTOS</h1>
+        </div>
+        <div class="videosYT">
             <div class="row">
-                <h2>CORTOS</h2>
-                <div class="col-md-6">
-                    
-                    <iframe width="460" height="215" src="https://www.youtube.com/embed/WiYUC5Yrnno" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="col-md-6" data-aos="fade-up">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/WiYUC5Yrnno" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
     </section>
+    <!-- FIN CORTOS -->
+
+    <!-- INICIO PODCAST -->
+    <section id="podcastpag">
+        <div id="titulo">
+            <h1>PODCASTS</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-6" data-aos="fade-right">
+                <h3>Radio Capital</h3>
+                <h5>Colaboradores: <br> Angie Carolina Roa Palacios</h5>
+                <audio src="audio/Radio Capital.mp3" controls="controls">
+                    Este navegador no puede reproducir el audio
+                </audio>
+            </div>
+            <div class="col-md-6" data-aos="fade-left">
+                <h3>Situaciones Vergonzosas</h3>
+                <h5>Colaboradores: <br>Dayana Katerine Cagua Bernal <br>José Sebastián Cristancho Mesa</h5>
+                <audio src="audio/situaciones vergonzosas.mp3" controls="controls"></audio>
+            </div>
+        </div>
+    </section>
+    <!-- FIN PODCAST -->
+
+    <!-- INICIO PUBLICIDAD -->
+    <section id="publipag">
+        <div id="titulo">
+            <h1>PUBLICIDAD</h1>
+        </div>
+        <div class="videosYT">
+            <div class="row">
+                <div class="col-md-6" data-aos="zoom-out-down">
+                    <img src="docs/reflexion.jpg" alt="imagen publicitaria sobre la contaminación">
+                </div>
+                <div class="col-md-6" data-aos="zoom-out-down">
+                    <img src="docs/bachoco.jpg" alt="imagen publicitaria, empresa bachoco">
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- FIN PUBLICIDAD -->
+
+     <!-- INICIO CONTACTO -->
+     <section id="contacto">
+        <div class="container">
+            <div class="cont-text">
+                <i>
+                    <h1>CONTACTO</h1>
+                    <div class="row">
+                        <div class="col-md-3">
+                            
+                            <!-- CODIGO PARA WHATSAPP -->
+                            <a target="_blank"
+                                href="https://api.whatsapp.com/send?phone=573232370461&text=Hola!%20me%20gustaría%20conocer%20acerca%20de%20de%20tu%20trabajo%20!">
+                                <img src="img/icon-whatsapp.png" alt="whatsapp"></a>
+                             </div>
+                    </div>
+                    <a id="correo" href="mailto:danielccontreras1234@gmail.com">danielccontreras1234@gmail.com</a>
+                </i>
+            </div>
+
+
+
+
+
+
+        </div>
+    </section>
+    <!-- FIN CONTACTO -->
+
+
+
+
+
+
+    <!-- JS DE BOOTSTRAP -->
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+
 </body>
 </html>
