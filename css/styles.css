@@ -348,7 +348,7 @@ header::before{
     transition: .3s;
 }
 #body.dia #btn-tema{
-    background: #f5f5dc;
+    background: transparent;
     transition: .3s;
 }
 #body.dia .bg-port-d{
@@ -432,7 +432,7 @@ header::before{
     transition: .3s;
 }
 #body.noche #btn-tema{
-    background: #9c9c9c;
+    background: transparent;
     transition: .3s;
 }
 #body.noche .bg-port-d{
