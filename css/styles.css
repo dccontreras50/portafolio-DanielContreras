@@ -733,9 +733,13 @@ header::before{
     transition: .8s;
     outline: none;
 }
-.navbar-light .navbar-toggler-icon:hover{
+#barranavanima.navbar-light .navbar-toggler-icon:hover{
     background: #000000;
-    border-radius: 4px solid #ffffff;
+    width: 30px;
+    height: 30px;
+    outline: none;
+    border-radius: 20px;
+    border: 4px solid #ffffff;
 }
 #boody.noche2 #barranavanima .navbar-light .navbar-nav .nav-link{
     color: #ffffff;
