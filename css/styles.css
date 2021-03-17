@@ -730,7 +730,12 @@ header::before{
     height: 30px;
     background: white;
     border-radius: 20px;
-    transition: 1s;
+    transition: .8s;
+    outline: none;
+}
+.navbar-light .navbar-toggler-icon:hover{
+    background: #000000;
+    border-radius: 4px solid #ffffff;
 }
 #boody.noche2 #barranavanima .navbar-light .navbar-nav .nav-link{
     color: #ffffff;
