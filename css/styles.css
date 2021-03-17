@@ -730,7 +730,7 @@ header::before{
     height: 30px;
     background: white;
     border-radius: 20px;
-    transition: .4s;
+    transition: 1s;
 }
 #boody.noche2 #barranavanima .navbar-light .navbar-nav .nav-link{
     color: #ffffff;
