@@ -248,7 +248,7 @@ header::before{
     z-index: 11;
     top: 40%;
     right: 0px;
-    background: #F5F5DC;
+    background: transparent;
     transition: .4s;
 }
 #btn-tema.active{
@@ -514,6 +514,10 @@ header::before{
 }
 #body.morado header::before{
     background-image: linear-gradient(to right, #cca9dd 40%, transparent);
+    transition: .3s;
+}
+#body.morado #habilidades .row .cont-1{
+    background: #de76ff;
     transition: .3s;
 }
 #body.morado #habilidades .row .cont-2{
