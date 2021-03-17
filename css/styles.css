@@ -715,37 +715,47 @@ header::before{
 }
 #boody.noche2 #animapag{
     background: #000000;
+    transition: .3s;
 }
 #boody.noche2 #titulo{
     color: #ffffff;
+    transition: .3s;
 }
 #boody.noche2 .bg-port-d{
     background: #000000;
+    transition: .3s;
 }
 #boody.noche2 .navbar-light .navbar-toggler-icon{
     width: 30px;
     height: 30px;
     background: white;
     border-radius: 20px;
+    transition: .4s;
 }
 #boody.noche2 #barranavanima .navbar-light .navbar-nav .nav-link{
     color: #ffffff;
+    transition: .3s;
 }
 #boody.noche2 #cortospag{
     background: #000000;
+    transition: .3s;
 }
 #boody.noche2 #podcastpag{
     background: #000000;
     color: white;
+    transition: .3s;
 }
 #boody.noche2 #publipag{
     background: #000000;
+    transition: .3s;
 }
 #boody.noche2 #contacto{
     background: #000000;
+    transition: .3s;
 }
 #boody.noche2 #correo{
     color: #ffffff;
+    transition: .3s;
 }
 /* FIN TEMA OSCURO */
 /* TEMA MORADO */
@@ -762,9 +772,11 @@ header::before{
 }
 #boody.morado #titulo{
     color: purple;
+    transition: .3s;
 }
 #boody.morado #podcastpag{
     color: purple;
+    transition: .3s;
 }
 /* FIN TEMA MORADO */
 /* TEMA VERDE */
@@ -781,9 +793,11 @@ header::before{
 }
 #boody.verde #titulo{
     color: rgb(113, 235, 113);
+    transition: .3s;
 }
 #boody.verde #podcastpag{
     color: rgb(113, 235, 113);
+    transition: .3s;
 }
 /* FIN TEMA VERDE */
 /* TEMA ROSA */
@@ -800,9 +814,11 @@ header::before{
 }
 #boody.rosa #titulo{
     color: rgb(243, 133, 243);
+    transition: .3s;
 }
 #boody.rosa #podcastpag{
     color: rgb(243, 133, 243);
+    transition: .3s;
 }
 /* FIN TEMA ROSA */
 /* TEMA AZUL */
@@ -819,9 +835,11 @@ header::before{
 }
 #boody.azul #titulo{
     color: rgb(103, 116, 170);
+    transition: .3s;
 }
 #boody.azul #podcastpag{
     color: rgb(103, 116, 170);
+    transition: .3s;
 }
 /* FIN TEMA AZUL */
 
