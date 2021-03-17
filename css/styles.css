@@ -25,9 +25,14 @@ html {
     z-index: 10;
     width: 100%;
 }
-
+/* barra de navegacion pag principal */
 .navbar-light .navbar-nav .nav-link{
     margin: 0 60px;
+    color: #6c464e;
+}
+/* barra de navegacion pag de animaciones */
+#barranavanima .navbar-light .navbar-nav .nav-link{
+    margin: 0 34px;
     color: #6c464e;
 }
 
@@ -47,6 +52,17 @@ header{
     padding-top: 90px;
     min-height: 700px;
     color: #6c464e;
+    position: relative;
+}
+
+header::before{
+    content: '';
+    display: block;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, #f8f1e7, transparent);
+    position: absolute;
 }
 
 .cont-text{
@@ -63,6 +79,17 @@ header{
     background-position-x: center;
     min-height: 700px;
     color: #6c464e;
+    position: relative;
+}
+
+#habilidades::before{
+    content: '';
+    display: block;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    position: absolute;
 }
 
 #habilidades .cont-text{
@@ -133,6 +160,17 @@ header{
     background-position-x: center;
     min-height: 700px;
     color: #6c464e;
+    position: relative;
+}
+
+#material::before{
+    content: '';
+    display: block;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    position: absolute;
 }
 
 #material .cont-text{
@@ -160,8 +198,18 @@ header{
     background-image: url(../img/bg-contacto.jpg);
     background-size: cover;
     background-position-x: center;
-
+    position: relative;
     color: #6c464e;
+}
+
+#contacto::before{
+    content: '';
+    display: block;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    position: absolute;
 }
 
 #contacto .cont-text{
@@ -193,6 +241,596 @@ header{
 }
 
 /* FIN CONTACTO */
+
+/* INICIO BOTON FLOTANTE TEMA */
+#btn-tema{
+    position: fixed;
+    z-index: 11;
+    top: 40%;
+    right: 0px;
+    background: #F5F5DC;
+    transition: .4s;
+}
+#btn-tema.active{
+    right: 190px;
+    transition: .4s;
+}
+
+#btn-tema img{
+    animation: rotacion 5s linear infinite;
+}
+
+@keyframes rotacion{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+
+/* contenedor de los temas */
+#cont-colores{
+    background: #F5F5DC;
+    position: fixed;
+    z-index: 11;
+    top: 40%;
+    right: -242px;
+    padding: 20px;
+    transition: .4s;
+    text-align: center;
+}
+#cont-colores.active{
+    right: 0;
+    transition: .4s;
+}
+/* fin contenedor de los temas */
+
+/* temas a seleccionar */
+#nochedia img{
+    cursor: pointer;
+}
+
+#morado{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: purple; 
+    border: purple; 
+    outline: none;
+}
+
+#verde{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: rgb(113, 235, 113);
+    border: rgb(113, 235, 113);
+    outline: none;
+}
+
+#rosa{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: rgb(243, 133, 243);
+    border: rgb(243, 133, 243);
+    outline: none;
+}
+
+#azul{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: rgb(103, 116, 170);
+    border: rgb(103, 116, 170);
+    outline: none;
+}
+/* fin de temas a seleccionar */
+
+/* VARIANTES DE COLORES O TEMAS */
+/* VARIANTES DE COLORES O TEMAS */
+/* VARIANTES DE COLORES O TEMAS */
+
+/* TEMA CLARO */
+#body.dia #sol{
+    width: 30px;
+    border: 4px solid #000000;
+    border-radius: 20px;
+    transition: .3s;
+}
+#body.dia .navbar-light .navbar-nav .nav-link{
+    color: #6c464e;
+    transition: .3s;
+}
+#body.dia header{
+    color: #6c464e;
+    transition: .3s;
+}
+#body.dia #cont-colores{
+    background: #f8f1e7;
+    transition: .3s;
+}
+#body.dia #btn-tema{
+    background: #f5f5dc;
+    transition: .3s;
+}
+#body.dia .bg-port-d{
+    background: #f8f1e7;
+    transition: .3s;
+}
+#body.dia header::before{
+    background: transparent;
+    transition: .3s;
+}
+#body.dia #habilidades{
+    color: #6c464e;
+}
+#body.dia #habilidades::before{
+    background: transparent;
+    transition: .3s;
+    z-index: -1;
+}
+#body.dia #habilidades .row .cont-1{
+    background: #de76ff;
+    transition: .3s;
+}
+#body.dia #habilidades .row .cont-2{
+    background: #37c5ff;
+    transition: .3s;
+}
+#body.dia #habilidades .row .cont-3{
+    background: #c1ddf0;
+    transition: .3s;
+}
+#body.dia #habilidades .row .cont-4{
+    background: #ff7e1b;
+    transition: .3s;
+}
+#body.dia #habilidades .row .cont-5{
+    background: #a4f12f;
+    transition: .3s;
+}
+#body.dia #material{
+    color: #6c464e;
+}
+#body.dia #material .card-body{
+    background: #ffffff;
+    transition: .3s;
+}
+#body.dia #material::before{
+    background: transparent;
+    transition: .3s;
+}
+#body.dia #contacto{
+    color: #6c464e;
+}
+#body.dia #contacto::before{
+    background: transparent;
+    transition: .3s
+}
+#body.dia #correo{
+    color: #6c464e;
+}
+/* FIN TEMA CLARO */
+
+
+/* TEMA OSCURO */
+
+#body.noche #luna{
+    width: 30px;
+    border: 4px solid #000000;
+    border-radius: 20px;
+    transition: .3s;
+}
+#body.noche .navbar-light .navbar-nav .nav-link{
+    color: #ffffff;
+    transition: .3s;
+}
+#body.noche header{
+    color: #ffffff;
+    transition: .3s;
+}
+#body.noche #cont-colores{
+    background: #9c9c9c;
+    transition: .3s;
+}
+#body.noche #btn-tema{
+    background: #9c9c9c;
+    transition: .3s;
+}
+#body.noche .bg-port-d{
+    background: #0a0a0a;
+    transition: .3s;
+}
+#body.noche header::before{
+    background-image: linear-gradient(to right, #0a0a0a 60%, transparent);
+    transition: .3s;
+}
+#body.noche #habilidades{
+    color: #ffffff;
+    background: transparent;
+}
+#body.noche #habilidades::before{
+    background: #0a0a0a;
+    transition: .3s;
+    z-index: -1;
+}
+#body.noche #habilidades .row .cont-1{
+    background: #b4b4b4;
+    transition: .3s;
+}
+#body.noche #habilidades .row .cont-2{
+    background: #b4b4b4;
+    transition: .3s;
+}
+#body.noche #habilidades .row .cont-3{
+    background: #b4b4b4;
+    transition: .3s;
+}
+#body.noche #habilidades .row .cont-4{
+    background: #b4b4b4;
+    transition: .3s;
+}
+#body.noche #habilidades .row .cont-5{
+    background: #b4b4b4;
+    transition: .3s;
+}
+#body.noche #material{
+    color: #ffffff;
+    background: transparent;
+}
+#body.noche #material .card-body{
+    background: #b4b4b4;
+    transition: .3s;
+}
+#body.noche #material::before{
+    background: #0a0a0a;
+    transition: .3s;
+    z-index: -1;
+}
+#body.noche #contacto{
+    color: #ffffff;
+    background: transparent;
+}
+#body.noche #contacto::before{
+    background: #0a0a0a;
+    transition: .3s;
+    z-index: -1;
+}
+#body.noche #correo{
+    color: #ffffff;
+}
+/* FIN DE TEMA OSCURO */
+
+
+/* TEMA MORADO */
+#body.morado #morado{
+    width: 30px;
+    height: 30px;
+    background: #f5f5dc;
+    border: 4px solid purple;
+    transition: .3s;
+}
+#body.morado .bg-port-d{
+    background: #cca9dd;
+    transition: .3s;
+}
+#body.morado header::before{
+    background-image: linear-gradient(to right, #cca9dd 40%, transparent);
+    transition: .3s;
+}
+#body.morado #habilidades .row .cont-2{
+    background: #de76ff;
+    transition: .3s;
+}
+#body.morado #habilidades .row .cont-3{
+    background: #de76ff;
+    transition: .3s;
+}
+#body.morado #habilidades .row .cont-4{
+    background: #de76ff;
+    transition: .3s;
+}
+#body.morado #habilidades .row .cont-5{
+    background: #de76ff;
+    transition: .3s;
+}
+#body.morado #material .card-body{
+    background: #cca9dd;
+    transition: .3s;
+}
+#body.morado .btn-primary{
+    color: #cca9dd;
+    background: #ffffff;
+    border: #cca9dd;
+    transition: .3s;
+}
+/* FIN DE TEMA MORADO */
+
+/* TEMA VERDE */
+#body.verde #verde{
+    width: 30px;
+    height: 30px;
+    background: #f5f5dc;
+    border: 4px solid rgb(113, 235, 113);
+    transition: .3s;
+}
+#body.verde .bg-port-d{
+    background: #aaf093;
+    transition: .3s;
+}
+#body.verde header::before{
+    background-image: linear-gradient(to right, #aaf093 40%, transparent);
+    transition: .3s;
+}
+#body.verde #habilidades .row .cont-1{
+    background: #89fd6c;
+    transition: .3s;
+}
+#body.verde #habilidades .row .cont-2{
+    background: #89fd6c;
+    transition: .3s;
+}
+#body.verde #habilidades .row .cont-3{
+    background: #89fd6c;
+    transition: .3s;
+}
+#body.verde #habilidades .row .cont-4{
+    background: #89fd6c;
+    transition: .3s;
+}
+#body.verde #habilidades .row .cont-5{
+    background: #89fd6c;
+    transition: .3s;
+}
+#body.verde #material .card-body{
+    background: #aaf093;
+    transition: .3s;
+}
+#body.verde .btn-primary{
+    color: #aaf093;
+    background: #ffffff;
+    border: #aaf093;
+    transition: .3s;
+}
+/* FIN DE TEMA VERDE */
+
+/* TEMA ROSA */
+#body.rosa #rosa{
+    width: 30px;
+    height: 30px;
+    background: #f5f5dc;
+    border: 4px solid rgb(243, 133, 243);
+    transition: .3s;
+}
+#body.rosa .bg-port-d{
+    background: #f093d1;
+    transition: .3s;
+}
+#body.rosa header::before{
+    background-image: linear-gradient(to right, #f093d1 40%, transparent);
+    transition: .3s;
+}
+#body.rosa #habilidades .row .cont-1{
+    background: #e25cb1;
+    transition: .3s;
+}
+#body.rosa #habilidades .row .cont-2{
+    background: #e25cb1;
+    transition: .3s;
+}
+#body.rosa #habilidades .row .cont-3{
+    background: #e25cb1;
+    transition: .3s;
+}
+#body.rosa #habilidades .row .cont-4{
+    background: #e25cb1;
+    transition: .3s;
+}
+#body.rosa #habilidades .row .cont-5{
+    background: #e25cb1;
+    transition: .3s;
+}
+#body.rosa #material .card-body{
+    background: #f093d1;
+    transition: .3s;
+}
+#body.rosa .btn-primary{
+    color: #f093d1;
+    background: #ffffff;
+    border: #f093d1;
+    transition: .3s;
+}
+/* FIN DE TEMA ROSA */
+
+/* TEMA AZUL */
+#body.azul #azul{
+    width: 30px;
+    height: 30px;
+    background: #f5f5dc;
+    border: 4px solid rgb(103, 116, 170);
+    transition: .3s;
+}
+#body.azul .bg-port-d{
+    background: #93a1f0;
+    transition: .3s;
+}
+#body.azul header::before{
+    background-image: linear-gradient(to right, #93a1f0 40%, transparent);
+    transition: .3s;
+}
+#body.azul #habilidades .row .cont-1{
+    background: #635ce2;
+    transition: .3s;
+}
+#body.azul #habilidades .row .cont-2{
+    background: #635ce2;
+    transition: .3s;
+}
+#body.azul #habilidades .row .cont-3{
+    background: #635ce2;
+    transition: .3s;
+}
+#body.azul #habilidades .row .cont-4{
+    background: #635ce2;
+    transition: .3s;
+}
+#body.azul #habilidades .row .cont-5{
+    background: #635ce2;
+    transition: .3s;
+}
+#body.azul #material .card-body{
+    background: #93a1f0;
+    transition: .3s;
+}
+#body.azul .btn-primary{
+    color: #93a1f0;
+    background: #ffffff;
+    border: #93a1f0;
+    transition: .3s;
+}
+/* FIN TEMA AZUL */
+
+
+
+/* INICIO DE TEMAS PAGINA DE ANIMACIONES */
+/* INICIO DE TEMAS PAGINA DE ANIMACIONES */
+/* TEMA CLARO */
+#boody.dia2 #sol{
+    width: 30px;
+    border: 4px solid #000000;
+    border-radius: 20px;
+    transition: .3s;
+}
+/* FIN TEMA CLARO */
+
+
+/* TEMA OSCURO */
+#boody.noche2 #luna{
+    width: 30px;
+    border: 4px solid #000000;
+    border-radius: 20px;
+    transition: .3s;
+}
+#boody.noche2 #animapag{
+    background: #000000;
+}
+#boody.noche2 #titulo{
+    color: #ffffff;
+}
+#boody.noche2 .bg-port-d{
+    background: #000000;
+}
+#boody.noche2 .navbar-light .navbar-toggler-icon{
+    width: 30px;
+    height: 30px;
+    background: white;
+    border-radius: 20px;
+}
+#boody.noche2 #barranavanima .navbar-light .navbar-nav .nav-link{
+    color: #ffffff;
+}
+#boody.noche2 #cortospag{
+    background: #000000;
+}
+#boody.noche2 #podcastpag{
+    background: #000000;
+    color: white;
+}
+#boody.noche2 #publipag{
+    background: #000000;
+}
+#boody.noche2 #contacto{
+    background: #000000;
+}
+#boody.noche2 #correo{
+    color: #ffffff;
+}
+/* FIN TEMA OSCURO */
+/* TEMA MORADO */
+#boody.morado #morado{
+    width: 30px;
+    height: 30px;
+    background: #f5f5dc;
+    border: 4px solid purple;
+    transition: .3s;
+}
+#boody.morado .bg-port-d{
+    background: #cca9dd;
+    transition: .3s;
+}
+#boody.morado #titulo{
+    color: purple;
+}
+#boody.morado #podcastpag{
+    color: purple;
+}
+/* FIN TEMA MORADO */
+/* TEMA VERDE */
+#boody.verde #verde{
+    width: 30px;
+    height: 30px;
+    background: #f5f5dc;
+    border: 4px solid rgb(113, 235, 113);
+    transition: .3s;
+}
+#boody.verde .bg-port-d{
+    background: #aaf093;
+    transition: .3s;
+}
+#boody.verde #titulo{
+    color: rgb(113, 235, 113);
+}
+#boody.verde #podcastpag{
+    color: rgb(113, 235, 113);
+}
+/* FIN TEMA VERDE */
+/* TEMA ROSA */
+#boody.rosa #rosa{
+    width: 30px;
+    height: 30px;
+    background: #f5f5dc;
+    border: 4px solid rgb(243, 133, 243);
+    transition: .3s;
+}
+#boody.rosa .bg-port-d{
+    background: #f093d1;
+    transition: .3s;
+}
+#boody.rosa #titulo{
+    color: rgb(243, 133, 243);
+}
+#boody.rosa #podcastpag{
+    color: rgb(243, 133, 243);
+}
+/* FIN TEMA ROSA */
+/* TEMA AZUL */
+#boody.azul #azul{
+    width: 30px;
+    height: 30px;
+    background: #f5f5dc;
+    border: 4px solid rgb(103, 116, 170);
+    transition: .3s;
+}
+#boody.azul .bg-port-d{
+    background: #93a1f0;
+    transition: .3s;
+}
+#boody.azul #titulo{
+    color: rgb(103, 116, 170);
+}
+#boody.azul #podcastpag{
+    color: rgb(103, 116, 170);
+}
+/* FIN TEMA AZUL */
+
+/* FIN DE TEMAS PAGINA DE ANIMACIONES */
+/* FIN DE TEMAS PAGINA DE ANIMACIONES */
+
+
+
+/* FIN DE VARIANTES DE COLORES O TEMAS */
+/* FIN DE VARIANTES DE COLORES O TEMAS */
+/* FIN DE VARIANTES DE COLORES O TEMAS */
+
+/* FIN BOTON FLOTANTE TEMA */
 
 /* PAGINA 2 EN DONDE ESTAN LOS VIDEOS Y TRABAJOS */
 /* coreccion de titulos */
@@ -227,6 +865,7 @@ header{
     background-color: #efea98;
     padding: 30px;
     text-align: center;
+    color: #000000;
 }
 /* FIN PODCAST */
 
@@ -257,6 +896,7 @@ header{
     .videosYT .row .col-md-6 img{
         width: 230px;
     }
+
 }
 
 /* VERSION DE TABLETA */
