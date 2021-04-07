@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gurajada&display=swap');
 
 h1 h2 h3 h4{
     font-family: 'Advent Pro', sans-serif;
@@ -8,10 +9,13 @@ p{
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 40px;
 }
-
+#mensajeluna p{
+    font-family: 'Gurajada', serif;
+    font-size: 26px;
+    margin-bottom: 0;
+}
 
 /* FIN RESET */
-
 
 
 
@@ -27,7 +31,7 @@ html {
 }
 /* barra de navegacion pag principal */
 .navbar-light .navbar-nav .nav-link{
-    margin: 0 60px;
+    margin: 0 50px;
     color: #6c464e;
 }
 /* barra de navegacion pag de animaciones */
@@ -423,6 +427,22 @@ header::before{
     color: #ffffff;
     transition: .3s;
 }
+#body.noche .navbar-light .navbar-toggler-icon{
+    width: 30px;
+    height: 30px;
+    background: white;
+    border-radius: 20px;
+    transition: .8s;
+    outline: none;
+}
+#body.menuoscuroactivo .navbar-light .navbar-toggler-icon{
+    background: #000000;
+    width: 30px;
+    height: 30px;
+    outline: none;
+    border-radius: 20px;
+    border: 4px solid #ffffff;
+}
 #body.noche header{
     color: #ffffff;
     transition: .3s;
@@ -479,6 +499,15 @@ header::before{
 #body.noche #material .card-body{
     background: #b4b4b4;
     transition: .3s;
+}
+#body.noche #material .modal-header{
+    background: #000000;
+}
+#body.noche #material .modal-body{
+    background: #000000;
+}
+#body.noche #material .modal-footer{
+    background: #000000;
 }
 #body.noche #material::before{
     background: #0a0a0a;
@@ -540,6 +569,15 @@ header::before{
     background: #cca9dd;
     transition: .3s;
 }
+#body.morado #material .modal-header{
+    background: #cca9dd;
+}
+#body.morado #material .modal-body{
+    background: #cca9dd;
+}
+#body.morado #material .modal-footer{
+    background: #cca9dd;
+}
 #body.morado .btn-primary{
     color: #cca9dd;
     background: #ffffff;
@@ -587,6 +625,15 @@ header::before{
 #body.verde #material .card-body{
     background: #aaf093;
     transition: .3s;
+}
+#body.verde #material .modal-header{
+    background: #aaf093;
+}
+#body.verde #material .modal-body{
+    background: #aaf093;
+}
+#body.verde #material .modal-footer{
+    background: #aaf093;
 }
 #body.verde .btn-primary{
     color: #aaf093;
@@ -636,6 +683,15 @@ header::before{
     background: #f093d1;
     transition: .3s;
 }
+#body.rosa #material .modal-header{
+    background: #f093d1;
+}
+#body.rosa #material .modal-body{
+    background: #f093d1;
+}
+#body.rosa #material .modal-footer{
+    background: #f093d1;
+}
 #body.rosa .btn-primary{
     color: #f093d1;
     background: #ffffff;
@@ -683,6 +739,15 @@ header::before{
 #body.azul #material .card-body{
     background: #93a1f0;
     transition: .3s;
+}
+#body.azul #material .modal-header{
+    background: #93a1f0;
+}
+#body.azul #material .modal-body{
+    background: #93a1f0;
+}
+#body.azul #material .modal-footer{
+    background: #93a1f0;
 }
 #body.azul .btn-primary{
     color: #93a1f0;
@@ -733,7 +798,7 @@ header::before{
     transition: .8s;
     outline: none;
 }
-#barranavanima.navbar-light .navbar-toggler-icon:hover{
+#boody.menuoscuroactivo .navbar-light .navbar-toggler-icon{
     background: #000000;
     width: 30px;
     height: 30px;
@@ -907,6 +972,31 @@ header::before{
 }
 /* FIN PUBLICIDAD */
 
+/* CENTRADO DE VIDEOS E IMAGENES */
+.videosYT{
+    text-align: center;
+}
+/* fin de centrado videos  e imagenes */
+
+/* PUBLICIDAD DE LUNASTRAR */
+#mensajeluna{
+    position: fixed;
+    background: #ffffff;
+    color: #d59acb;
+    top: 76%;
+    right: 0;
+    padding: 10px;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 20px 0 0 20px;
+    transition: 1s;
+    box-shadow: 10px 10px 33px -8px rgb(0 0 0 / 75%);
+}
+#mensajeluna a{
+    color: #d59acb;
+}
+/* FIN PUBLICIDAD DE LUNASTRAR */
+
 
 
 /* VERSION DE MOVIL*/
@@ -927,7 +1017,6 @@ header::before{
     .videosYT .row .col-md-6 img{
         width: 230px;
     }
-
 }
 
 /* VERSION DE TABLETA */
@@ -936,4 +1025,22 @@ header::before{
         width: 350px;
     }
 }
-
+/* AJUSTES ADICIONALES EN RESPONSIVE */
+/* TARJETAS DE ESTUDIOS Y PROYECTOS */
+@media screen and (max-width:767px) and (min-width:350px){
+    #material .col-md-6{
+        padding-left: 14%;
+    }
+}
+/* CORECCION TAMAÑO DE VIDEOS */
+@media screen and (max-width:1228px) and (min-width:1060px){
+    .videosYT .row .col-md-6 iframe{
+        width: 490px;
+    }
+}
+@media screen and (max-width:1060px) and (min-width:601px){
+    .videosYT .row .col-md-6 iframe{
+        width: 400px;
+    }
+}
+/* FIN CORECCION TAMAÑO DE */

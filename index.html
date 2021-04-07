@@ -21,7 +21,7 @@
     <!-- BARRA DE NAVEGACION -->
     <nav class="navbar navbar-expand-lg navbar-light bg-port-d">
 
-        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        <button onclick="menunocheact();" class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -29,7 +29,8 @@
             <div class="navbar-nav">
                 <a class="nav-link " href="#">PRINCIPAL</a>
                 <a class="nav-link" href="#habilidades">HABILIDADES</a>
-                <a class="nav-link" href="#material">ESTUDIOS Y PROYECTOS</a>
+                <a class="nav-link" href="#material">ESTUDIOS</a>
+                <a class="nav-link" href="#sect-proyect">PROYECTOS</a>
                 <a class="nav-link" href="#contacto">CONTACTO</a>
             </div>
         </div>
@@ -119,7 +120,8 @@
 
 
                     </div>
-
+                    <div id="sect-proyect">
+                        
                     <h1>PROYECTOS</h1>
                     <div class="row">
 
@@ -179,13 +181,14 @@
                             <div class="card" style="width: 220px;">
                                 <div class="card-body">
                                     <h4 class="card-title">ANIMACIONES</h4>
-                                    <img src="img/bg-lunastrar.jpg" class="card-img-top" alt="DIPLOMA">
+                                    <img src="img/bg-animaciones.jpg" class="card-img-top" alt="DIPLOMA">
                                     <a href="animaciones.html" class="btn btn-primary">Ver más</a>
                                 </div>
                             </div>
                         </div>
 
 
+                    </div>
                     </div>
                 </i>
             </div>
@@ -235,6 +238,13 @@
         <button id="azul" onclick="bgazul();"></button>
     </div>
     <!-- fin de boton flotante cambio de tema -->
+
+
+    <!-- PUBLICIDAD DE LUNASTRAR -->
+    <div id="mensajeluna" data-aos="fade-left">
+            <p>Aprende con <br><img src="img/logoluna.png" alt=""> Lunastrar <br><u><a onclick="alertaluna();" href="#">Conoce Más</a></u></p>
+    </div>
+    <!-- FIN PUBLICIDAD DE LUNASTRAR -->
 
 
 

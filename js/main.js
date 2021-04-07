@@ -4,6 +4,10 @@ function nodisponible(){
     alert ("El documento aún no está disponible");
 }
 
+function alertaluna(){
+    alert("Lunastrar es un proyecto de videos educativos, con el fin de enseñar la historia de Cundinamarca hacia los niños. (Próximamente, Muy Pronto!!!)");
+}
+
 function temaactivo(){
     var selector = document.getElementById("cont-colores");
     var selector2 = document.getElementById("btn-tema");
@@ -26,6 +30,11 @@ function bgnoche(){
     var selector = document.getElementById("body");
     selector.className = '';
     selector.classList.toggle("noche");
+}
+// boton menu
+function menunocheact(){
+    var selector = document.getElementById("body");
+    selector.classList.toggle("menuoscuroactivo")
 }
 
 // tema morado
@@ -68,6 +77,11 @@ function bgnoche2(){
     var selector = document.getElementById("boody");
     selector.className = '';
     selector.classList.toggle("noche2");
+}
+// boton menu
+function menunoche(){
+    var selector = document.getElementById("boody");
+    selector.classList.toggle("menuoscuroactivo")
 }
 // tema morado
 function bgmorado2(){
