@@ -436,7 +436,7 @@ header::before{
     outline: none;
 }
 #body.menuoscuroactivo .navbar-light .navbar-toggler-icon{
-    background: #000000;
+    background: #transparent;
     width: 30px;
     height: 30px;
     outline: none;
@@ -799,7 +799,7 @@ header::before{
     outline: none;
 }
 #boody.menuoscuroactivo .navbar-light .navbar-toggler-icon{
-    background: #000000;
+    background: #transparent;
     width: 30px;
     height: 30px;
     outline: none;
