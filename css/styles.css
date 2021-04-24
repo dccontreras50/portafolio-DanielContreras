@@ -1049,4 +1049,14 @@ header::before{
         width: 400px;
     }
 }
-/* FIN CORECCION TAMAÑO DE */
+/* FIN CORECCION TAMAÑO DE VIDEOS */
+
+/* AJUSTE TAMAÑO DE REPRODUCTORES DE AUDIO */
+@media screen and (max-width:463px) and (min-width:350px){
+    audio{
+        width: 150px;
+    }
+}
+
+
+/* FIN DE AJUSTE TAMAÑO DE REPRODUCTORES DE AUDIO */
