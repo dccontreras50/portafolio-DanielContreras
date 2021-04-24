@@ -5,7 +5,7 @@ function nodisponible(){
 }
 
 function alertaluna(){
-    alert("Lunastrar es un proyecto de videos educativos, con el fin de enseñar la historia de Cundinamarca hacia los niños. (Próximamente, Muy Pronto!!!)");
+    alert("Lunastrar es un proyecto de videos educativos, con el fin de enseñar la historia de Cundinamarca hacia los niños. (Próximamente, Muy Pronto!!! AhhhHHHHhhHHhhh)");
 }
 
 function temaactivo(){

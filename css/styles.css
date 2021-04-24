@@ -280,6 +280,10 @@ header::before{
     transition: .4s;
     text-align: center;
 }
+#cont-colores p{
+    font-size: 14px;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
 #cont-colores.active{
     right: 0;
     transition: .4s;
@@ -445,10 +449,6 @@ header::before{
 }
 #body.noche header{
     color: #ffffff;
-    transition: .3s;
-}
-#body.noche #cont-colores{
-    background: #9c9c9c;
     transition: .3s;
 }
 #body.noche #btn-tema{
@@ -980,6 +980,7 @@ header::before{
 
 /* PUBLICIDAD DE LUNASTRAR */
 #mensajeluna{
+    z-index: 10;
     position: fixed;
     background: #ffffff;
     color: #d59acb;
@@ -999,6 +1000,11 @@ header::before{
 
 
 
+
+
+
+
+
 /* VERSION DE MOVIL*/
 
 @media screen and (max-width:600px) and (min-width:220px){
@@ -1011,17 +1017,17 @@ header::before{
     #correo{
         font-size: 16px;
     }
-    .videosYT .row .col-md-6 iframe{
+    .videosYT iframe{
         width: 200px;
     }
-    .videosYT .row .col-md-6 img{
+    .videosYT img{
         width: 230px;
     }
 }
 
 /* VERSION DE TABLETA */
 @media screen and (max-width:1078px) and (min-width:600px){
-    .videosYT .row .col-md-6 img{
+    .videosYT img{
         width: 350px;
     }
 }
@@ -1034,12 +1040,12 @@ header::before{
 }
 /* CORECCION TAMAÑO DE VIDEOS */
 @media screen and (max-width:1228px) and (min-width:1060px){
-    .videosYT .row .col-md-6 iframe{
+    .videosYT iframe{
         width: 490px;
     }
 }
 @media screen and (max-width:1060px) and (min-width:601px){
-    .videosYT .row .col-md-6 iframe{
+    .videosYT .carousel-item iframe{
         width: 400px;
     }
 }
