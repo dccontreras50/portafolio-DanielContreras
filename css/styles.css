@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gurajada&display=swap');
 *
 {
     cursor: url(../img/default.png), url(img/default.png),pointer;
@@ -5,10 +8,6 @@
 a{
     cursor: url(../img/icono2.png), url(img/icono2.png),pointer;
 }
-@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Gurajada&display=swap');
-
 h1 h2 h3 h4{
     font-family: 'Advent Pro', sans-serif;
 }
