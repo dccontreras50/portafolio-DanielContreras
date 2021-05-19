@@ -1,3 +1,10 @@
+*
+{
+    cursor: url(../img/default.png), url(img/default.png),pointer;
+}
+a{
+    cursor: url(../img/icono2.png), url(img/icono2.png),pointer;
+}
 @import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gurajada&display=swap');
@@ -14,6 +21,7 @@ p{
     font-size: 26px;
     margin-bottom: 0;
 }
+
 
 /* FIN RESET */
 
@@ -156,7 +164,7 @@ header::before{
 /* FIN HABILIDADES */
 
 
-/* INICIO MATERIAL */
+/* INICIO MATERIAL  O ESTUDIOS Y PROYECTOS*/
 
 #material{
     background-image: url(../img/bg-material.jpg);
@@ -165,6 +173,7 @@ header::before{
     min-height: 700px;
     color: #6c464e;
     position: relative;
+    padding: 30px;
 }
 
 #material::before{
@@ -177,6 +186,16 @@ header::before{
     position: absolute;
 }
 
+#material h1{
+    margin: 50px 0;
+}
+
+#material img{
+    width: 200px !important;
+}
+#material .videosYT .inicioimagenes img{
+    margin: 0 0 30px -30px;
+}
 #material .cont-text{
     margin-top: 0px;
     text-align: center;
@@ -188,7 +207,7 @@ header::before{
 }
 
 #material .card-body{
-    padding: 10px 16px;
+    padding: 10px;
 }
 
 #material .card-body a{
@@ -495,6 +514,7 @@ header::before{
 #body.noche #material{
     color: #ffffff;
     background: transparent;
+    padding: .1px;
 }
 #body.noche #material .card-body{
     background: #b4b4b4;
@@ -823,6 +843,10 @@ header::before{
     background: #000000;
     transition: .3s;
 }
+#boody.noche2 #paginaswebextra{
+    background: #000000;
+    transition: .3s;
+}
 #boody.noche2 #contacto{
     background: #000000;
     transition: .3s;
@@ -965,6 +989,14 @@ header::before{
 }
 /* FIN PODCAST */
 
+/* INICIO PAGINAS WEB EXTRA */
+#paginaswebextra{
+    background-color: #cafe8f;
+    padding: 30px;
+}
+/* FIN PAGINAS WEB EXTRA */
+
+
 /* INICIO PUBLICIDAD */
 #publipag{
     background-color: #f3aeb9;
@@ -1029,7 +1061,7 @@ header::before{
 @media screen and (max-width:1078px) and (min-width:600px){
     .videosYT img{
         width: 350px;
-    }
+    }   
 }
 /* AJUSTES ADICIONALES EN RESPONSIVE */
 /* TARJETAS DE ESTUDIOS Y PROYECTOS */
