@@ -8,6 +8,9 @@
 a{
     cursor: url(../img/icono2.png), url(img/icono2.png),pointer;
 }
+pointer{
+    cursor: url(../img/icono2.png), url(img/icono2.png),pointer;
+}
 h1 h2 h3 h4{
     font-family: 'Advent Pro', sans-serif;
 }
@@ -993,6 +996,9 @@ header::before{
 #paginaswebextra{
     background-color: #cafe8f;
     padding: 30px;
+}
+#paginaswebextra img{
+    margin: 40px 0;
 }
 /* FIN PAGINAS WEB EXTRA */
 
