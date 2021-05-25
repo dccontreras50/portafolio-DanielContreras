@@ -8,9 +8,6 @@
 a{
     cursor: url(../img/icono2.png), url(img/icono2.png),pointer;
 }
-pointer{
-    cursor: url(../img/icono2.png), url(img/icono2.png),pointer;
-}
 h1 h2 h3 h4{
     font-family: 'Advent Pro', sans-serif;
 }
