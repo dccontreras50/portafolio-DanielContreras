@@ -77,7 +77,7 @@ header::before{
 }
 
 .cont-text{
-    margin: 80px 10px 10px 0;
+    margin: 100px 10px 10px 0;
 }
 
 /* FIN HEADER */
@@ -125,7 +125,7 @@ header::before{
     margin: 60px;
     width: 70%;
     height: 80px;
-    background: #de76ff;
+    background: #a348bf;
     padding: 18px;
     border-radius: 40px;
 }
@@ -158,15 +158,28 @@ header::before{
     width: 70%;
     height: 80px;
     background: #a4f12f;
+    padding: 8px;
+    border-radius: 40px;
+}
+#habilidades .row .cont-6{
+    margin: 60px;
+    width: 70%;
+    height: 80px;
+    background: #e96c6c;
+    padding: 18px;
     border-radius: 40px;
 }
 /* FIN HABILIDADES */
 
 
-/* INICIO MATERIAL  O ESTUDIOS Y PROYECTOS*/
+/* INICIO DE TRABAJOS PAGINA PRINCIPAL */
+/* FIN DE TRABAJOS PAGINA PRINCIPAL */
+
+
+/* INICIO MATERIAL  O ESTUDIOS Y PROYECTOS  PAGINA DE CONTACTO*/
 
 #material{
-    background-image: url(../img/bg-material.jpg);
+    background-color: #cafe8f;
     background-size: cover;
     background-position-x: center;
     min-height: 700px;
@@ -174,19 +187,8 @@ header::before{
     position: relative;
     padding: 30px;
 }
-
-#material::before{
-    content: '';
-    display: block;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    position: absolute;
-}
-
 #material h1{
-    margin: 50px 0;
+    margin: 30px 0 60px;
 }
 
 #material img{
@@ -224,17 +226,6 @@ header::before{
     position: relative;
     color: #6c464e;
 }
-
-#contacto::before{
-    content: '';
-    display: block;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    position: absolute;
-}
-
 #contacto .cont-text{
     margin: 0 0 0px;
     text-align: center;
@@ -511,37 +502,23 @@ header::before{
     background: #b4b4b4;
     transition: .3s;
 }
-#body.noche #material{
-    color: #ffffff;
-    background: transparent;
-    padding: .1px;
-}
-#body.noche #material .card-body{
+#body.noche #habilidades .row .cont-6{
     background: #b4b4b4;
     transition: .3s;
 }
-#body.noche #material .modal-header{
-    background: #000000;
-}
-#body.noche #material .modal-body{
-    background: #000000;
-}
-#body.noche #material .modal-footer{
-    background: #000000;
-}
-#body.noche #material::before{
-    background: #0a0a0a;
+#body.noche #material{
+    background-color: #000000;
+    color: #ffffff;
     transition: .3s;
-    z-index: -1;
+}
+#body.noche #material .card-body{
+    background: #000000;
+    transition: .3s;
 }
 #body.noche #contacto{
+    background: #000000;
     color: #ffffff;
-    background: transparent;
-}
-#body.noche #contacto::before{
-    background: #0a0a0a;
     transition: .3s;
-    z-index: -1;
 }
 #body.noche #correo{
     color: #ffffff;
@@ -582,6 +559,10 @@ header::before{
     transition: .3s;
 }
 #body.morado #habilidades .row .cont-5{
+    background: #de76ff;
+    transition: .3s;
+}
+#body.morado #habilidades .row .cont-6{
     background: #de76ff;
     transition: .3s;
 }
@@ -642,6 +623,10 @@ header::before{
     background: #89fd6c;
     transition: .3s;
 }
+#body.verde #habilidades .row .cont-6{
+    background: #89fd6c;
+    transition: .3s;
+}
 #body.verde #material .card-body{
     background: #aaf093;
     transition: .3s;
@@ -699,6 +684,10 @@ header::before{
     background: #e25cb1;
     transition: .3s;
 }
+#body.rosa #habilidades .row .cont-6{
+    background: #e25cb1;
+    transition: .3s;
+}
 #body.rosa #material .card-body{
     background: #f093d1;
     transition: .3s;
@@ -753,6 +742,10 @@ header::before{
     transition: .3s;
 }
 #body.azul #habilidades .row .cont-5{
+    background: #635ce2;
+    transition: .3s;
+}
+#body.azul #habilidades .row .cont-6{
     background: #635ce2;
     transition: .3s;
 }
@@ -987,6 +980,9 @@ header::before{
     text-align: center;
     color: #000000;
 }
+#podcastpag h5{
+    padding-bottom: 40px;
+}
 /* FIN PODCAST */
 
 /* INICIO PAGINAS WEB EXTRA */
@@ -996,6 +992,11 @@ header::before{
 }
 #paginaswebextra img{
     margin: 60px 0;
+    padding: 40px 0;
+}
+#paginaswebextra p{
+    color: #6c464e;
+    margin: 0;
 }
 /* FIN PAGINAS WEB EXTRA */
 
@@ -1004,6 +1005,9 @@ header::before{
 #publipag{
     background-color: #f3aeb9;
     padding: 30px;
+}
+#publipag img{
+    padding-bottom: 50px;
 }
 /* FIN PUBLICIDAD */
 
@@ -1049,6 +1053,13 @@ header::before{
     header{
         background-position-x: left;
     }
+    .introduccioninicio{
+        text-align: center;
+    }
+    .col-md-6.mishabilidades h3{
+        font-size: 18px;
+        padding-top: 10px;
+    }
     #correo{
         font-size: 16px;
     }
@@ -1056,12 +1067,15 @@ header::before{
         width: 200px;
     }
     .videosYT img{
-        width: 230px;
+        width: 150px;
     }
 }
 
 /* VERSION DE TABLETA */
 @media screen and (max-width:1078px) and (min-width:600px){
+    header{
+        background-position-x: left;
+    }
     .videosYT img{
         width: 350px;
     }   
