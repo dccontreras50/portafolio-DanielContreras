@@ -523,8 +523,16 @@ header::before{
 #body.noche #correo{
     color: #ffffff;
 }
+#body.noche #material .modal-body{
+    background: #000000;
+}
+#body.noche #material .modal-header{
+    background: #000000;
+}
+#body.noche #material .modal-footer{
+    background: #000000;
+}
 /* FIN DE TEMA OSCURO */
-
 
 /* TEMA MORADO */
 #body.morado #morado{
@@ -994,10 +1002,6 @@ header::before{
     margin: 60px 0;
     padding: 40px 0;
 }
-#paginaswebextra p{
-    color: #6c464e;
-    margin: 0;
-}
 /* FIN PAGINAS WEB EXTRA */
 
 
@@ -1016,6 +1020,11 @@ header::before{
     text-align: center;
 }
 /* fin de centrado videos  e imagenes */
+/* ESPACIO DE ARRIBA A ABAJO DE LOS VIDEOSYT */
+.carousel-item-next, .carousel-item-prev, .carousel-item.active {
+padding: 40px 0; 
+}
+/* FIN DE ESPACIO DE ARRIBA A ABAJO DE LOS VIDEOSYT */
 
 /* PUBLICIDAD DE LUNASTRAR */
 #mensajeluna{
